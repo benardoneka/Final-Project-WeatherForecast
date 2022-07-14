@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Darker+Grotesque:wght@300&family=Elsie+Swash+Caps:wght@900&family=Kanit&family=Roboto:wght@100&display=swap');
+
+//Creating variables
+$logoFont: 'Comfortaa', cursive;
+$bg-secondary: #008000;
+
+// font-family: 'Comfortaa', cursive;
+// font-family: 'Darker Grotesque', sans-serif;
+// font-family: 'Elsie Swash Caps', cursive;
+// font-family: 'Kanit', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    & .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    & .LogoCon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & h1 {
+            font-family: $logoFont;
+        }
+    }
+
+    & .logo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+
+    & .header-content {
+        margin-right: 30%;
+
+        & p{
+            padding: 10px;
+            color: yellow;
+            font-size: 2rem;
+        }
+
+        & h2 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        & button {
+            width: 100%;
+            padding: 10px;
+            margin: .5rem;
+            font-size: 20px;
+            transition: 1s ease-out;
+        }
+
+        & button:hover {
+            background: $bg-secondary;
+            border-radius: 5px;
+            color: #fff;
+            transform: scale(1.1);
+            font-weight: 600;
+            width: 200px;
+            margin-left: 25%;
+        }
+    }
+
+    & .inputContainer {
+        width: 100%;
+        padding: 10px;
+        background-color: $bg-secondary;
+    }
+
+    & input {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    & .cityName {
+        padding: 10px;
+    }
+}
+
+.weatherContainer {
+    width: 100%;
+    height: auto;
+    background: yellow;
+    padding: 10px;
+    margin: auto;
+
+    & .cardsContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+.cards {
+    display: block;
+    width: 250px;
+    height: 350px;
+    border: 1px solid #000;
+    padding: 2px;
+
+    & .temp {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    & .weather {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        margin: 20px;
+    }
+
+    & .image {
+        margin: -20px auto;
+    }
+
+    & .imgClass {
+       width: 100%;
+       height: 100%;
+    }
+
+    & button {
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 10px;
+        transition: 1s ease-out;
+    }
+
+    & button:hover {
+        background: $bg-secondary;
+        border-radius: 5px;
+        color: #fff;
+        transform: scale(1.1);
+        font-weight: 600;
+        width: 200px;
+        margin-left: 10%;
+    }
+
+}

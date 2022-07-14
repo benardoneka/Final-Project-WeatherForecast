@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Under the Weather | Final Project</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="weatherMapper()">
+
+    <div class="container">
+        <div class="header">
+            <div class="LogoCon">
+                <img class="logo" src="img/logo.png" alt="">
+                <!-- <h1>TEAM 5</h1> -->
+            </div>
+            <div class="header-content">
+                <h1 class="heading">5 Days Weather Forecast</h1>
+                <p id="inputContainer" class="inputContainer">City: <input type="text" id="cityInput"></p>
+                <button type="button" onclick="WeatherUserInfo()">Get Weather</button>        
+                <h2 id="cityName" class="cityName">---London---</h2>
+            </div>
+        </div>
+        
+        <div class = "weatherContainer">
+            <div class="cardsContainer">    
+
+                <div class = "cards">
+                    <p class="weather" id="day1"></p>
+                    <div class="image">
+                        <img src="dots.png" class="imgClass" id="img1">
+                    </div>
+                    <div class="temp">
+                        <p class="minValues" id="day1Min">Loading...</p>
+                        <p class="maxValues" id="day1Max">Loading...</p>
+                    </div>
+                    <button type="submit" onclick="weatherWare1()">Find Ware</button>
+                </div>
+
+                <div class = "cards">
+                    <p class="weather" id="day2"></p>
+                    <div class="image">
+                        <img src="dots.png" class="imgClass" id="img2">
+                    </div>
+                    <div class="temp">
+                        <p class="minValues" id="day2Min">Loading...</p>
+                        <p class="maxValues" id="day2Max">Loading...</p>
+                    </div>
+                    <button type="submit" onclick="weatherWare2()">Find Ware</button>
+                </div>
+
+                <div class = "cards">
+                    <p class="weather" id="day3"></p>
+                    <div class="image">
+                        <img src="dots.png" class="imgClass" id="img3">
+                    </div>
+                    <div class="temp">
+                        <p class="minValues" id="day3Min">Loading...</p>
+                        <p class="maxValues" id="day3Max">Loading...</p>
+                    </div>
+                    <button type="submit" onclick="weatherWare3()">Find Ware</button>
+                </div>
+
+                <div class = "cards">
+                    <p class="weather" id="day4"></p>
+                    <div class="image">
+                        <img src="dots.png" class="imgClass" id="img4">
+                    </div>
+                    <div class="temp">
+                        <p class="minValues" id="day4Min">Loading...</p>
+                        <p class="maxValues" id="day4Max">Loading...</p>
+                    </div>
+                    <button type="submit" onclick="weatherWare4()">Find Ware</button>
+                </div>
+
+                <div class = "cards">
+                    <p class="weather" id="day5"></p>
+                    <div class="image">
+                        <img src="" class="imgClass" id="img5">
+                    </div>
+                    <div class="temp">
+                        <p class="minValues" id="day5Min">Loading...</p>
+                        <p class="maxValues" id="day5Max">Loading...</p>
+                    </div>
+                    <button type="submit" onclick="weatherWare5()">Find Ware</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <header>
+        <img src="img/logo.png" alt="the 'under the weather' site logo">
+    </header>
+    <section>
+        <img src="#" alt="" id="currentImg">
+        <p id="current"></p>
+        <p id="city"></p>
+        <p id="temp"></p>
+        <hr>
+        <p>Wind: <span id="wind"></span></p>
+        <p>Humid: <span id="humid"></span></p>
+        <hr>
+    </section>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th id="dayforecast1"></th>
+                    <th id="dayforecast2"></th>
+                    <th id="dayforecast3"></th>
+                    <th id="dayforecast4"></th>
+                    <th id="dayforecast5"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="#" alt="" id="forecasticon1">
+                        <p id="forecasttemp1"></p>
+                    </td>
+                    <td><img src="#" alt="" id="forecasticon2">
+                        <p id="forecasttemp2"></p>
+                    </td>
+                    <td><img src="#" alt="" id="forecasticon3">
+                        <p id="forecasttemp3"></p>
+                    </td>
+                    <td><img src="#" alt="" id="forecasticon4">
+                        <p id="forecasttemp4"></p>
+                    </td>
+                    <td><img src="#" alt="" id="forecasticon5">
+                        <p id="forecasttemp5"></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <input id="searchfield">
+        <button type="submit" id="submit" onclick="testFunction()">Submit</button>
+        <p id="cityName">--London--</p>
+        <p id="cityId" style="color: teal; font-weight: bold"></p>
+    </section>
+
+    <div class="flex-items">
+        <div class="cards">
+            <h1 id="wkday1"></h1>
+            <div class="image-cont">
+                <img src="" alt="Weather logo" id="img1">
+            </div>
+            <div class="temp">
+                <h4 class="minTem">Min: <span id="minTem1"></span></h4>
+                <h4 class="maxTem">Max: <span id="maxTem1"></span></h4>
+            </div>
+        </div>
+
+        <div class="cards">
+            <h1 id="wkday2"></h1>
+            <div class="image-cont">
+                <img src="" alt="Weather logo" id="img2">
+            </div>
+            <div class="temp">
+                <h4 class="minTem">Min: <span id="minTem2"></span></h4>
+                <h4 class="maxTem">Max: <span id="maxTem2"></span></h4>
+            </div>
+        </div>
+
+        <div class="cards">
+            <h1 id="wkday3"></h1>
+            <div class="image-cont">
+                <img src="" alt="Weather logo" id="img3">
+            </div>
+            <div class="temp">
+                <h4 class="minTem">Min: <span id="minTem3"></span></h4>
+                <h4 class="maxTem">Max: <span id="maxTem3"></span></h4>
+            </div>
+        </div>
+
+        <div class="cards">
+            <h1 id="wkday4"></h1>
+            <div class="image-cont">
+                <img src="" alt="Weather logo" id="img4">
+            </div>
+            <div class="temp">
+                <h4 class="minTem">Min: <span id="minTem4"></span></h4>
+                <h4 class="maxTem">Max: <span id="maxTem4"></span></h4>
+            </div>
+        </div>
+
+        <div class="cards">
+            <h1 id="wkday5"></h1>
+            <div class="image-cont">
+                <img src="" alt="Weather logo" id="img5">
+            </div>
+            <div class="temp">
+                <h4 class="minTem">Min: <span id="minTem5"></span></h4>
+                <h4 class="maxTem">Max: <span id="maxTem5"></span></h4>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="js/main.js"></script>
+</body>
+</html>
